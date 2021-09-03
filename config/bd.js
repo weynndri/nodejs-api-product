@@ -10,7 +10,7 @@ const bd = mysql.createConnection({
 //     host: 'localhost',
 //     user: 'root',
 //     password: '',
-//     database: 'bd_ib_app'
+//     database: 'bd_boutique'
 // });
 
 bd.connect((err)=>{

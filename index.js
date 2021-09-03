@@ -14,12 +14,12 @@ app.use(cors());
 // === MY PROCESS | API REST
 
 // GET PRODUCT LISTE
-app.get('/api/getDatas/', (req, res)=>{
-    bd.query('SELECT * FROM t_data', (err, data)=>{
+app.get('/api/products/', (req, res)=>{
+    bd.query('SELECT * FROM product', (err, data)=>{
         if(err){
             return err;
         }
-        res.json(data);
+        res.json({products:data});
     });
 
 });
